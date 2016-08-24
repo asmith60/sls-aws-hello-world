@@ -1,0 +1,19 @@
+{
+  "name": "sls-hello-world",
+  "version": "1.0.0",
+  "description": "Hello world app utilizing the serverless architecture",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmith60/sls-hello-world.git"
+  },
+  "author": "asmith60, SusanElizabeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmith60/sls-hello-world/issues"
+  },
+  "homepage": "https://github.com/asmith60/sls-hello-world#readme"
+}
