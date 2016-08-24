@@ -8,6 +8,6 @@ before_install:
   - npm install -g serverless@beta
 deploy:
   provider: script
-  script: deploy.sh
+  script: ./deploy.sh
   on:
     branch: master
