@@ -1,4 +1,4 @@
-service: sls-hello-world
+service: sls-aws-hello-world
 
 provider:
   name: aws

@@ -1,19 +1,19 @@
 {
-  "name": "sls-hello-world",
+  "name": "sls-aws-hello-world",
   "version": "1.0.0",
-  "description": "Hello world app utilizing the serverless architecture",
+  "description": "Hello world app running on AWS Lambda utilizing the Serverless framework",
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asmith60/sls-hello-world.git"
+    "url": "git+https://github.com/asmith60/sls-aws-hello-world.git"
   },
   "author": "asmith60, SusanElizabeth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/asmith60/sls-hello-world/issues"
+    "url": "https://github.com/asmith60/sls-aws-hello-world/issues"
   },
-  "homepage": "https://github.com/asmith60/sls-hello-world#readme"
+  "homepage": "https://github.com/asmith60/sls-aws-hello-world#readme"
 }
