@@ -4,6 +4,7 @@
   "description": "Hello world app running on AWS Lambda utilizing the Serverless framework",
   "main": "handler.js",
   "scripts": {
+    "start": "sls invoke --function hello",
     "test": "echo \"No tests yet . . .\""
   },
   "repository": {
