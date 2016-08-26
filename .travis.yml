@@ -1,13 +1,16 @@
 language: node_js
 node_js:
-  - "4"
+- '4'
 branches:
   only:
   - master
 before_install:
-  - npm install -g serverless@beta
+- npm install -g serverless@beta
 deploy:
   provider: script
   script: ./deploy.sh
   on:
     branch: master
+notifications:
+  slack:
+    secure: 5HyzmZVPaO2pE03I6OiSPSq3jvNxzF/ssYDt/KOkyHS9d0Beox8qcDDtXWdhZtSxaTE0g5k/A2ZfsLZ+o5LRGYSR17fyJbkQigw1WZEUa5LEU6etKVIjuNLh322+hYQwjqWgUamL3njhTAgjN30+wcBCQZtpmMIX7AehQEqFCtG/4fNygnDyodjrBMyv3xQb/GCSZf7aeBNGC50NJUu+PcrBhw59zi1Gdxv9SFGj+nsUFf4y+SVrmWizBkG2IMljPcfmxIUaVX6i6dNs0QOF6x0LhqgEDjLYRGwrmdbs6vheptFJvIdBTZLVRM83GXlr3WyiNnR4nYuj36bXIuArTyatZOoZV+YBveBs3vDxqZsQw8mViPt4rP2yGPa9W0s720wW20uMRK66AhUByrgMJrIoMCFI7TgQATgRjTtJlWrDpl9IB4aB0aH0nutF1MNA0pRVMcFUQL4vlL5prQU6Nlsfo8NwpMn1nwCryOH40s8X5QytgOTLU0Q68BTed7j+T4Gst7vfAhlS0pT+QGmn26/fYGyc7UA60w+JZvRLzxkv0TBd/Xqc7kk139fiktub5s059zcmhZtTuI5rQYzpjhpQVlOnNrH7afCjeIvflh+vJSqXF7TjwBXO32S8NqryeClzv461SaYKEJk7BwDvwhVLp5cCOUkNs3mUlh8fSL8=
