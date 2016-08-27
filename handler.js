@@ -5,5 +5,7 @@ module.exports.hello = (event, context, cb) => {
         message: 'Hello world!'
     };
 
+    console.log(event);
+
     cb(null, response);
 };
