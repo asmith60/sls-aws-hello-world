@@ -5,6 +5,7 @@ module.exports.hello = (event, context, cb) => {
 
     var response;
 
+    //TODO: Error undefined challenge
     if (event.body.challenge) {
         response = {
             challenge: event.body.challenge
