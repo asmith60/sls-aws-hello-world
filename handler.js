@@ -1,21 +1,12 @@
 'use strict';
 
-module.exports.hello = (event, context, cb) => {
+module.exports.test = (event, context, cb) => {
     console.log(event);
+    console.log(context);
 
-    var response;
-
-    //TODO: Error undefined challenge
-    if (event.body.challenge) {
-        response = {
-            challenge: event.body.challenge
-        };
-
-        cb(null, response);
-    }
-
-    response = {
-        message: 'Hello world!'
+    var response = {
+        text: "Bruno says hello!",
+        response_type: "in_channel",
     };
 
     cb(null, response);

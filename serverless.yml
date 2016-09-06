@@ -3,8 +3,6 @@ service: sls-aws-hello-world
 provider:
   name: aws
   runtime: nodejs4.3
-
-defaults:
   stage: dev
   region: us-west-2
 
@@ -17,9 +15,9 @@ defaults:
 #  artifact: my-service-code.zip
 
 functions:
-  hello:
-    handler: handler.hello
+  test:
+    handler: handler.test
     events:
       - http:
-          path: hw
+          path: test
           method: post
